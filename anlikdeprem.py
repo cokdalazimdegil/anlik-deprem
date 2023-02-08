@@ -31,10 +31,10 @@ while True:
         print(earthquake_data)
         previous_data = earthquake_data
         webbrowser.open('https://google.com/', new=2)
-        pywhatkit.sendwhatmsg_to_group_instantly("BxorFLiL13C4qGbdEz6Zr2", get_latest_earthquake_data())
+        pywhatkit.sendwhatmsg_to_group_instantly("group_id", get_latest_earthquake_data())
         time_lib.sleep(5)
-        os.system("taskkill /f /im msedge.exe")
+        os.system("taskkill /f /im chrome.exe")
 
 
-    time_lib.sleep(60) # Verileri her 60 saniyede tekrar kontrol et
+    time_lib.sleep(60)
 
